@@ -115,6 +115,8 @@ To train and evaluate the model:
 
 ## Project Structure
 
+The project structure has been updated based on the repository's current state:
+
 ```
 CLIPVisionAlign/
 │
@@ -125,13 +127,16 @@ CLIPVisionAlign/
 ├── LICENSE                 # MIT License file
 ├── data/                   # Directory for dataset (not included; must be downloaded)
 │   └── flickr30k_images/   # Flickr30k dataset images and captions
-├── report.pdf              # Project report
+├── Reports/                # Directory for project reports
+│   ├── Report_1.pdf        # Initial project report
+│   └── Report_2.pdf        # Final project report (renamed from Final_Report.pdf)
 ```
 
 ### Key Files:
 - **`vision_project.py`**: Core script with data loading, model, and training logic.
 - **`requirements.txt`**: Lists dependencies (e.g., `torch`, `timm`).
-- **`report.pdf`**: Detailed project report.
+- **`Reports/Report_1.pdf`**: Initial project report.
+- **`Reports/Report_2.pdf`**: Final project report, renamed from `Final_Report.pdf`.
 
 ---
 
@@ -142,7 +147,7 @@ The project compares three attention variants:
 - **Cross-Attention**: Highest alignment accuracy but memory-intensive.
 - **Sparse Attention**: Most efficient for longer captions.
 
-*Note: Add specific metrics (e.g., accuracy %) from your experiments.*
+*Specific metrics (e.g., accuracy %) can be found in the project reports located in the `Reports/` directory.*
 
 ---
 
